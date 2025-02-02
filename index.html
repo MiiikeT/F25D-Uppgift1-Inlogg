@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inlämningsuppgift 1 - Inlogg - Michael Tariao F25D</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Michael Tariao F25D - Inlämningsuppgift 1 - Inlogg</title>
 </head>
 <body>
-    <h1>Hej</h1>
-    <p>test</p>
-    <p>test2</p>
+    <div class="login">
+        <h1 class="login-header">Välkommen</h1>
+        <form class="login-form">
+            <!-- Username and password is required with "required" attribute -->
+            <label 
+                class="login-form__label" 
+                for="email">Username:
+            </label>
+            <input 
+                class="login-form__input"
+                type="email" required>
+            <label 
+                class="login-form__label"    
+                for="password">Password:
+            </label>
+            <input 
+                class="login-form__input"
+                type="password" 
+                required>
+            <div>
+                <input type="checkbox">
+                <label for="">Remember me</label>
+            </div>
+            <input 
+                class="form-button" 
+                type="submit" 
+                value="Login">
+            <!-- Register button w/ alert function to communicate that no new user is accepted at this time. -->
+            <input 
+                class="form-button" 
+                type="button" 
+                value="Register" 
+                onclick="alert(`It's not you, it's us. We are not currently accepting new users. Please try again at a later time.`)">
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloribus? Cum dolores quidem quos neque, suscipit corporis corrupti tempora cupiditate natus voluptatem nam placeat et quas a eveniet, similique magnam!
+            Quia neque quod dolorum doloremque suscipit sed officiis quam molestias quasi ullam obcaecati assumenda accusamus illum, commodi, odit error tempore ex delectus cumque! Ipsum eaque praesentium perferendis porro. Alias, perspiciatis.</p> -->
+        </form>
+    </div>
 </body>
 </html>

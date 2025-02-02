@@ -1,4 +1,62 @@
+/* Implementing BEM naming convention in my style. Read more: https://getbem.com/naming/ */
+/* Mobile first design */
+
+/* Style reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/* /Style reset */
+
+body{
+    background:#fafafa ;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
+
+.login-header{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: -8px 16px 37px 14px rgba(0,0,0,0.36); /* Wrapping container with box shadow for at better visual effect */
+}
+/* Target all input and div in form element */
+form > input, div{
+    margin-bottom: 10px;
+}
+/* /Target all input and div in form element */
+
+.form-button{
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+/* Hover effect on mouse over button */
+.form-button:hover{
+    background: linear-gradient(to right, rgb(255, 81, 47), rgb(240, 152, 25));
+    color: black;
+}
+/* /Hover effect on mouse over button */
