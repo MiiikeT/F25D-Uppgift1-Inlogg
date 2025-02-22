@@ -60,3 +60,11 @@ form > input, div{
     color: black;
 }
 /* /Hover effect on mouse over button */
+
+
+/* Desktop, tablet & anythong bigger than mobile device */
+@media (min-width: 376px){
+    /* .login-form{
+        width: 50%;
+    } */
+}
